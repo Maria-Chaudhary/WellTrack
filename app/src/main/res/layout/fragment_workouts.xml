@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewWorkouts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutWorkouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Image top -->
+        <ImageView
+            android:id="@+id/imageWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/img_1"
+            android:layout_marginBottom="45dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvWorkoutsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Workouts"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/btnResetCounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset All Counts"
+            android:layout_marginBottom="16dp" />
+        <!-- Button to get suggested workouts -->
+        <Button
+            android:id="@+id/btnSuggestWorkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Workout Suggestion"
+            android:layout_marginBottom="16dp" />
+
+        <!-- TextView to display suggested workouts -->
+        <TextView
+            android:id="@+id/tvWorkoutSuggestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suggestions will appear here"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="#000ff0"
+            android:layout_marginBottom="24dp" />
+
+
+        <!-- Strength -->
+        <LinearLayout
+            android:id="@+id/layoutStrength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_workout_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+        <TextView
+                android:id="@+id/tvStrength"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Strength"
+                android:textSize="16sp"
+                android:textStyle="bold"
+            android:textColor="@color/black"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/arrowStrength"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arow_right"
+                android:contentDescription="Expand Strength" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerStrength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:background="@color/white"
+            android:layout_marginBottom="12dp" />
+
+        <!-- HIIT -->
+        <LinearLayout
+            android:id="@+id/layoutHIIT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_workout_item"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvHIIT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="HIIT"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/arrowHIIT"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arow_right"
+                android:contentDescription="Expand HIIT" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerHIIT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Yoga -->
+        <LinearLayout
+            android:id="@+id/layoutYoga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="@drawable/bg_workout_item"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvYoga"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Yoga"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/arrowYoga"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arow_right"
+                android:contentDescription="Expand Yoga" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerYoga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Cardio -->
+        <LinearLayout
+            android:id="@+id/layoutCardio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="@drawable/bg_workout_item"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvCardio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cardio"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/arrowCardio"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arow_right"
+                android:contentDescription="Expand Cardio" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerCardio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:layout_marginBottom="12dp" />
+
+    </LinearLayout>
+</ScrollView>

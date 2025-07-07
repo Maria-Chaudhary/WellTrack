@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FitTrack</string>
+    <!-- GoalsFragment strings -->
+    <string name="edit_goal_title">Edit %1$s Goal</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="goal_steps_achieved">Steps Goal Achieved!</string>
+    <string name="goal_workout_achieved">Workout Goal Achieved!</string>
+    <string name="goal_calories_achieved"> Calories Goal Achieved!</string>
+    <string name="goal_sleep_achieved"> Sleep Goal Achieved!</string>
+
+    <string name="notification_channel_goals">Goal Achievements</string>
+
+    <string name="motivation_1">You are crushing it today! </string>
+    <string name="motivation_2">Almost there — keep moving!</string>
+    <string name="motivation_3">You are doing great stay consistent!</string>
+    <string name="motivation_4">Goals are dreams with deadlines. you are close</string>
+    <string name="motivation_5">Wow, strong progress today! </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_0_min">0 min</string>
+    <string name="_0">0%</string>
+    <string name="eye_break_reminder">Eye Break Reminder</string>
+    <string name="password">Password</string>
+    <string name="default_web_client_id">\"556779309291-jmeo4edkhbmgec4k62fgrlqej7aon7au.apps.googleusercontent.com\"</string>
+    <string name="logo">Logo</string>
+</resources>

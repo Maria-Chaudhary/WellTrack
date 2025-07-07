@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/inputHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="Height in cm"
+        android:importantForAutofill="no"
+        android:textColor="@color/black"
+        android:inputType="numberDecimal"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/inputWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Weight in kg"
+        android:textColor="@color/black"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

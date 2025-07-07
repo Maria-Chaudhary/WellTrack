@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green_500">#8FE418</color>
+    <color name="primaryButtonColor">#4CAF50</color> <!-- Green that looks good in both themes -->
+    <color name="stylishButtonColor">#ff00ff</color> <!-- Deep purple, elegant in light/dark -->
+    <color name="colorPrimary">#00BCD4</color> <!-- Teal -->
+    <color name="colorPrimaryDark">#0097A7</color>
+    <color name="colorBackground">#FFffff</color>
+   <color  name="teal_200">#ff0aff</color>
+    <color name="teal_700">#FF9800</color> <!-- Orange -->
+    <color name="buttonTextColor">#FFFFFF</color> <!-- For buttons -->
+    <color name="lightBackground">#FAFAFA</color>
+
+    <color name="gray_300">#E0E0E0</color>
+    <color name="holo_purple">#601DD7</color>
+</resources>
+
+<!--// #FF4081-->

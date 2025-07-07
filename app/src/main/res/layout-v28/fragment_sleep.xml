@@ -1,0 +1,118 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/sleepTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:text="Your Sleep Tracker"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Last Night Sleep -->
+        <TextView
+            android:id="@+id/lastNightSleepText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Night: -- h -- m"
+            android:textSize="20sp"
+            android:textColor="#3F51B5"
+            android:paddingBottom="8dp"/>
+
+        <!-- Sleep Goal Progress -->
+        <TextView
+            android:id="@+id/sleepGoalProgressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#4CAF50"
+            android:paddingBottom="8dp"/>
+
+        <ProgressBar
+            android:id="@+id/sleepProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:max="8"
+            android:progressTint="@color/stylishButtonColor"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Add Sleep Record Button -->
+        <Button
+            android:id="@+id/addSleepButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Sleep Record"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:backgroundTint="@color/stylishButtonColor"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Sleep History Title -->
+        <TextView
+            android:id="@+id/sleepHistoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sleep History (Past 7 days)"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <!-- Sleep History List -->
+        <TextView
+            android:id="@+id/sleepHistoryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- No records yet"
+            android:textSize="16sp"
+            android:textColor="#ff00ff"
+            android:paddingBottom="16dp"/>
+
+        <!-- Sleep Graph Title -->
+        <TextView
+            android:id="@+id/graphTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Sleep Graph"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <!-- Sleep Graph (HelloCharts ColumnChart) -->
+        <lecho.lib.hellocharts.view.ColumnChartView
+            android:id="@+id/sleepChart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#F9F9F9"
+            android:outlineSpotShadowColor="@color/stylishButtonColor"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Motivational Text -->
+        <TextView
+            android:id="@+id/sleepMotivationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Great sleep = great energy! 💪"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:textColor="@color/stylishButtonColor"
+            android:paddingBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

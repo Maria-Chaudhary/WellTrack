@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/inputHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hours (e.g. 7)"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/inputMinutes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Minutes (e.g. 30)"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/challengeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Challenge"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Big Circle Progress with background -->
+        <FrameLayout
+            android:id="@+id/progressContainer"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_circle_ring">
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/challengeProgress"
+                android:layout_width="340dp"
+                android:layout_height="340dp"
+                app:indicatorSize="280dp"
+                app:indicatorInset="10dp"
+                app:trackThickness="20dp"
+                android:indeterminate="false"
+                app:indicatorColor="@color/stylishButtonColor"
+                app:trackColor="@android:color/darker_gray" />
+
+
+            <TextView
+                android:id="@+id/progressPercentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:textColor="@color/black"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <!-- Current progress text -->
+        <TextView
+            android:id="@+id/challengeProgressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 / 500 kcal"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingBottom="12dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Challenge description -->
+        <TextView
+            android:id="@+id/challengeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Burn 500 calories today by staying active — running, walking, sports, gym!"
+            android:textSize="18sp"
+            android:textColor="@color/stylishButtonColor"
+            android:gravity="center"
+            android:padding="16dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Congratulation -->
+        <TextView
+            android:id="@+id/congratulationsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎉 Congratulations! You completed today's challenge!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:visibility="gone"
+            android:paddingTop="32dp"
+            android:paddingBottom="16dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Next Challenge Preview -->
+        <TextView
+            android:id="@+id/nextChallengeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔜 Next challenge will unlock tomorrow!"
+            android:textSize="18sp"
+            android:textColor="@color/primaryButtonColor"
+            android:paddingTop="16dp"
+            android:paddingBottom="32dp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,191 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/reminderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity Reminder"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/reminderDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stay active! Get reminders to move, stretch, hydrate, and more."
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:paddingBottom="24dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Interval input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder Interval (minutes):"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/intervalInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter minutes (e.g. 60)"
+            android:importantForAutofill="no"
+            android:textSize="18sp"
+            android:textColor="@color/teal_200"
+            android:inputType="number"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            tools:ignore="VisualLintTextFieldSize"/>
+
+        <!-- Switch -->
+        <Switch
+            android:id="@+id/reminderSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Reminder"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="24dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        <!-- Status text -->
+        <TextView
+            android:id="@+id/nextReminderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next reminder in: -- min"
+            android:textSize="16sp"
+            android:textColor="@color/stylishButtonColor"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/lastReminderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last reminder sent: --"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:paddingBottom="16dp"/>
+
+        <!-- Test button -->
+        <Button
+            android:id="@+id/testReminderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Reminder Now"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:padding="12dp"
+            android:backgroundTint="@color/stylishButtonColor"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="24dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Other types -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other Reminders:"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/waterReminderCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:text="Water Reminder" />
+
+        <CheckBox
+            android:id="@+id/stretchReminderCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stretch Reminder"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/eyeBreakReminderCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/eye_break_reminder"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/postureReminderCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:minHeight="48dp"
+            android:text="Posture Check Reminder" />
+
+        <CheckBox
+            android:id="@+id/breathingReminderCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:text="Breathing Exercise Reminder" />
+
+        <CheckBox
+            android:id="@+id/walkReminderCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:text="Walk Reminder"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/hydrationReminderCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp"
+            android:textColor="@color/black"
+            android:text="Hydration Tip Reminder"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Progress bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:max="5"
+            android:indeterminateTint="@color/stylishButtonColor"
+            android:progressTint="@color/stylishButtonColor"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/progressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminders today: 0/5"
+            android:textSize="16sp"
+            android:textColor="@color/stylishButtonColor"/>
+    </LinearLayout>
+</ScrollView>

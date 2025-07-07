@@ -1,0 +1,10 @@
+<resources>
+    <style name="DefaultTextStyle" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Theme.FitTrack.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/logo</item>
+    </style>
+
+</resources>
